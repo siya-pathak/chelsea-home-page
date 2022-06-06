@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chelsea FC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<style>
+    /* CSS Reset */
+    * {
+        font-family: 'Lato', sans-serif;
+    }
+
+    body {
+        color: whitesmoke;
+        margin: 0px;
+        padding: 0px;
+        background: url('project.jpg');
+        background-size: 1100px 800px;
+    }
+
+    .left {
+        position: absolute;
+        left: 34px;
+        top: 8px;
+        display: inline-block;
+        /* border: 2px solid red;  */
+
+    }
+
+    .left img {
+        width: 80px;
+    }
+
+    .mid {
+        display: block;
+        width: 60%;
+        margin: 20px auto;
+        border: 2px solid whitesmoke;
+        border-radius: 15px;
+
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 8px;
+        display: inline-block;
+        /* border: 2px solid whitesmoke;  */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        font-size: 19px;
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 34px 20px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        /* text-decoration: underline; */
+        color: rgb(242, 233, 113);
+        font-size: large;
+    }
+
+    .rightSide {
+        display: inline-block;
+    }
+
+    .rightSide li {
+        font-size: 19px;
+        display: inline-block;
+    }
+
+    .rightSide li a {
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 34px 20px;
+    }
+
+    .rightSide li a:hover,
+    .navbar li a:active {
+        text-decoration: underline;
+        color: rgb(242, 233, 113);
+    }
+
+    .container {
+        /* border: 2px solid whitesmoke; */
+        margin: 155px 40px;
+        /* padding: 17px 126px; */
+        /* width: 10%; */
+        border-radius: 10px;
+        list-style: none;
+    }
+
+    /* .container button {
+        margin:auto;
+    } */
+    .btn {
+        margin: 12px 28px;
+        padding: 18px;
+        /* justify-content: center; */
+        border: 2px solid whitesmoke;
+        border-radius: 18px;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        color: rgb(242, 233, 113);
+        background-color: black;
+        font-size: large;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+            <img src="logoForProject.png" alt="">
+        </div>
+        <!-- mid for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">MATCHES</a></li>
+                <li><a href="#">CLUB CHELSEA</a></li>
+                <li><a href="#">TEAMS</a></li>
+                <li><a href="#">STAMFORD BRIDGE</a></li>
+            </ul>
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+            <ul class="rightSide">
+                <li><a href="#" class="active">LOG IN</a></li>
+                <li><a href="#">JOIN US</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <li><button class="btn" id="btn1">BUY TICKETS</button></li>
+        <li><button class="btn">TICKET INFO</button></li>
+        <li><button class="btn">MATCHDAY INFO</button></li>
+        <li><button class="btn">FOUNDATION</button></li>
+    </div>
+</body>
+
+</html>
